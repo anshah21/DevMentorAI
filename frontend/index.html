@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>DevMentor AI</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+```
+<div class="header">
+    <h1>🚀 DevMentor AI</h1>
+    <p>DevMentor AI - AI-Powered Code Review Assistant for Students and Early-Career Developers</p>
+</div>
+
+<div class="features">
+
+    <div class="feature-card bug">
+        <span>🐛</span>
+        <h3>Bug Hunt</h3>
+        <p>Find coding errors instantly</p>
+    </div>
+
+    <div class="feature-card quality">
+        <span>✨</span>
+        <h3>Code Quality</h3>
+        <p>Best practices review</p>
+    </div>
+
+    <div class="feature-card interview">
+        <span>🎯</span>
+        <h3>Interview Prep</h3>
+        <p>Big-O & coding questions</p>
+    </div>
+
+    <div class="feature-card learn">
+        <span>📚</span>
+        <h3>Explain It</h3>
+        <p>Beginner-friendly learning</p>
+    </div>
+
+</div>
+
+<div class="editor-card">
+
+    <div class="section-title">
+        YOUR CODE
+    </div>
+
+    <div class="editor">
+
+        <div class="editor-header">
+
+            <div class="dots">
+                <div class="dot red"></div>
+                <div class="dot yellow"></div>
+                <div class="dot green"></div>
+            </div>
+
+            <div>
+                DevMentor Editor
+            </div>
+
+        </div>
+
+        <textarea id="code"
+        placeholder="// Paste your code here..."></textarea>
+
+    </div>
+
+    <div class="controls">
+
+        <select id="language">
+            <option>Python</option>
+            <option>Java</option>
+            <option>C</option>
+            <option>C++</option>
+            <option>JavaScript</option>
+        </select>
+
+        <input type="file" id="fileInput">
+
+        <button class="review-btn" onclick="reviewCode()">
+            ▶ Run Review
+        </button>
+
+        
+
+    </div>
+
+</div>
+
+
+
+
+<div class="stats-bar">
+
+    <span>📄 Lines: <b id="lineCount">0</b></span>
+
+    <span>🔤 Characters: <b id="charCount">0</b></span>
+
+    <span>💻 Language: <b id="langDisplay">Python</b></span>
+
+</div>
+
+
+
+
+
+
+<div class="results">
+
+    <div class="result-card">
+        <h3>🐛 AI Review</h3>
+        <div class="output" id="result">
+            Waiting for analysis...
+        </div>
+    </div>
+
+    <div class="result-card">
+        <h3>📚 Learning Suggestions</h3>
+        <div class="output" id="learning">
+            Recommendations will appear here...
+        </div>
+    </div>
+
+    
+
+</div>
+```
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
